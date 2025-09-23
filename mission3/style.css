@@ -1,0 +1,95 @@
+body {
+    font-family: "Verdana", sans-serif;
+    background-color: #D9968B;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    
+    
+
+}
+
+header {
+    background-color: white;
+    color: #D9968B;
+    padding: 20px 0;
+    text-align: center; 
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+nav ul li a {
+    text-decoration: none;
+}
+
+section {
+    padding: 20px;
+    margin: 10px auto;
+    width: 80%;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+section img {
+    display: block;
+    margin: 10px 0;
+    max-width: 100%;   
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #F2CE5C;
+}
+form {
+    background-color: #D9968B;
+}
+
+.label2 {
+        color: white;
+}
+
+#title1 {
+    text-align: center;
+    margin-right: 115px;
+}
+
+input[type="text"], input[type="password"], input[type="email"], textarea,
+input[type="tel"], input[type="url"]  {
+    border-radius: 30px;
+    border: 1px solid;
+
+    
+}
+
+td {
+    padding-bottom: 20px;
+    padding-right: 20px;
+}
+
+input[type="submit"] {
+    background-color: green;
+    color: white;
+    
+}
+
+input[type="submit"]:hover {
+    background-color: orange;
+    }
+
+    a:hover{
+        background-color: red;
+    }
+
+    h2 {
+        text-align: center;
+        background-color: #D9968B
+    }
