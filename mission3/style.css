@@ -41,7 +41,8 @@ section {
 section img {
     display: block;
     margin: 10px 0;
-    max-width: 100%;   
+    max-width: 100%;
+    list-style: none;
 }
 
 footer {
@@ -92,4 +93,5 @@ input[type="submit"]:hover {
     h2 {
         text-align: center;
         background-color: #D9968B
+
     }
