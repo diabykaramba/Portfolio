@@ -1,0 +1,64 @@
+body{
+    font-family: "Lato", sans-serif;
+    background-color: #B82F23;
+    color: white;
+}
+
+header {
+    background-color: white;
+    color: #B82F23;
+    text-align: center;
+    padding: 15px 0
+    }
+
+
+
+
+.card {
+    float: left;
+    background-color: #FC1B08;
+    width: 33%;
+    height: 700px;
+    margin: 0.16%
+    
+}
+
+.cardtitle {
+    text-align: center;
+    padding: 20px 0;
+    background-color: white;
+    margin: 10px;
+    color: black;
+}
+
+.carddesc{
+    background-color: #EDC80E;
+    height: 550px;
+    margin: 10px;
+}
+
+p{
+    padding: 10px;
+}
+
+img{
+    margin: 10px;
+    width: 90%;
+    height: 80%;
+    position: relative;
+    left: 2%;
+}
+
+#card3 {
+    float: left;
+    
+}
+
+footer {
+    background-color: white;
+    color: #B82F23;
+    text-align: center;
+    padding: 10px;
+    
+    
+    }
