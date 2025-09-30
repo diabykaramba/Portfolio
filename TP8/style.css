@@ -8,7 +8,7 @@ header {
     background-color: white;
     color: #B82F23;
     text-align: center;
-    padding: 15px 0
+    padding: 15px 0;
     }
 
 
@@ -19,7 +19,8 @@ header {
     background-color: #FC1B08;
     width: 33%;
     height: 700px;
-    margin: 0.16%
+    margin: 0.16%;
+    border-radius: 20px;
     
 }
 
@@ -29,12 +30,14 @@ header {
     background-color: white;
     margin: 10px;
     color: black;
+    border-radius: 20px;
 }
 
 .carddesc{
     background-color: #EDC80E;
     height: 550px;
     margin: 10px;
+    border-radius: 20px;
 }
 
 p{
@@ -61,4 +64,5 @@ footer {
     padding: 10px;
     
     
+
     }
