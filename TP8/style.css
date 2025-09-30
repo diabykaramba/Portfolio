@@ -50,6 +50,7 @@ img{
     height: 80%;
     position: relative;
     left: 2%;
+    border: solid black;
 }
 
 #card3 {
@@ -67,6 +68,7 @@ footer {
     
 
     }
+
 
 
 
