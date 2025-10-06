@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculatrice</title>
+    
+    <link href="style.css" rel="stylesheet">
+    <script src="calculatrice.js"></script>
+</head>
+<body>
+    <h1>Calculatrice</h1>
+
+    <label>Nombre 1:</label>
+    <input type="text" name="n1" id="n1" placeholder="Saisir un nombre">
+
+    <label>Nombre 2:</label>
+    <input type="text" name="n2" id="n2" placeholder="Saisir un nombre">
+    <br>
+
+    <button onclick="somme()">Additionner</button>
+    <button onclick="soustraction()">Soustraire</button>
+    <button onclick="division()">Diviser</button>
+    <button onclick="multiplication()">Multiplier</button>
+    <br>
+    <button onclick="pair()">Parité</button>
+    <button onclick="permute()">Permuter</button>
+    <button id="resetb" onclick="reset()">Réintialiser</button>
+    
+    <br>
+    <label><h2>Resultat:</h2></label>
+    <input type="text" name="resultat" id="resultat">
+
+    <label><h2>Parité:</h2></label>
+    <input type="text" name="pair" id="pair">
+
+    <br>
+    <p>
+        Le TP m'a permis d'apprendre comment jouer avec les variables en profondeur,
+        j'ai appris à me servir de JavaScript afin de réaliser plusieurs types d'opérations, déterminer la parité d'un nombre aléatoire de façon automatique, ainsi que permuter différentes
+        variables entre différentes zones de texte.
+    </p>
+
+</body>
+</html>
