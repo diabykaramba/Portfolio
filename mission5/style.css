@@ -1,0 +1,154 @@
+body {
+    font-family: "Arimo", sans-serif;
+    background-color: white;
+    
+}
+
+header {
+    background-color: #2D495E;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    
+}
+
+.photo {
+    position: absolute;
+    left: 20px;
+    top: 40px;
+    width: 210px;
+    height: 220px;
+    
+}
+
+h1 {
+    text-align: center;
+    text-decoration: underline;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    clear: both;
+
+}
+
+nav ul a {
+    color: black;
+}
+nav ul a:hover {
+    background-color: white;
+}
+
+section {
+    border-radius: 30px;
+    
+}
+
+
+.profil {
+    float: left;
+    background-color: black;
+    border: 5px solid #3388CC;
+    color: white;
+    margin: 10px;
+    width: 780px;
+}
+
+.formation {
+    float: right;
+    border: 5px solid #3388CC;
+    margin: 10px;
+    width: 780px;
+    
+}
+
+.formation ul {
+    list-style: none;
+}
+
+.competences {
+    float: left;
+    background-color: black;
+    border: 5px solid #3388CC;
+    color: white;
+    margin: 10px;
+    width: 780px;
+    font-weight: bold;
+    
+}
+
+.experiences {
+    float: right;
+    border: 5px solid #3388CC;
+    margin: 10px;
+    width: 780px;
+    
+    
+}
+
+.contact {
+    float: left;
+    background-color: #396E96;
+    border: 5px solid #3388CC;
+    color: white;
+    margin: 10px;
+    width: 780px;
+    
+    
+}
+
+.contact ul {
+    list-style: none;
+    font-style: italic;
+}
+
+.contact-info {
+    font-weight: bold;
+    color: yellow;
+    font-size: 20px;
+}
+h2 {
+    margin-bottom: 5px;
+}
+h3{
+    margin: 0;
+    font-style: italic;
+}
+
+hr {
+    margin-left: -39px;
+    margin-top: 20px;
+}
+
+.sous-titre {
+    font-size: 16px;
+    display: inline;
+    margin: 0;
+    
+}
+
+p {
+    margin: 0;
+}
+
+.silhouette {
+    width: 700px;
+    height: 700px;
+    float: left;
+    position: absolute;
+    top: 250px;
+    left: 600px;
+    opacity: 0.2;
+    
+}
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #2D495E;
+    clear: both;
+}
+
+@media screen and (max-width: 768px) {
+    
+}
