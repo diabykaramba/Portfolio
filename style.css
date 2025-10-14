@@ -122,12 +122,12 @@ nav li:hover .submenu {
   background-color: rgba(89, 250, 52, 0.15);
 }
 .menu-php:hover {
-  border-top: 5px solid #e2f7dd;
-  background-color: rgba(89, 250, 52, 0.15);
+  border-top: 5px solid #e02c2c;
+  background-color: rgb(255, 0, 0, 0.15);
 }
 .menu-certif:hover {
-  border-top: 5px solid #e2f7dd;
-  background-color: rgba(89, 250, 52, 0.15);
+  border-top: 5px solid #c33df2;
+  background-color: rgba(208, 103, 245, 0.15);
 }
 
 nav > ul > li:hover a {
@@ -144,13 +144,13 @@ nav > ul > li:hover a {
   background-color: RGB(251, 216, 99);
 }
 .menu-php .submenu {
-  background-color: RGB(31, 138, 7);
+  background-color: rgb(255, 0, 0);
 }
 .menu-mission .submenu {
   background-color: RGB(31, 138, 7);
 }
 .menu-certif .submenu {
-  background-color: RGB(31, 138, 7);
+  background-color: rgb(189, 0, 255);
 }
 .menu-contact .submenu {
   background-color: RGB(171, 171, 158);
@@ -170,7 +170,7 @@ submenu li:hover a {
   background-color: RGB(200, 165, 75);
 }
 .menu-php .submenu li:hover {
-  background-color: RGB(200, 165, 75);
+  background-color: rgb(230, 110, 110);
 }
 
 .menu-mission .submenu li:hover {
