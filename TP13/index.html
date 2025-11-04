@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TP13</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div class="top">
+      <img src="logo-fnac.png" />
+      <h2 class="id-facture">Date création: 03/11/2025</h2>
+      <h4 class="id-facture">N°Facture: N°91R000206</h3>
+    </div>
+
+    <!-- Milieu -->
+    <div class="middle"></div>
+      <table class="info-client" cellspacing="20px">
+        <tr>
+          <th class="sous-titre">Destinataire</th>
+          <th class="sous-titre">Envoyer à</th>
+        </tr>
+        <tr>
+          <td>Nom</td>
+          <td>Nom</td>
+        </tr>
+        <tr>
+          <td>Nom de la société</td>
+          <td>Nom de la société</td>
+        </tr>
+        <tr>
+          <td>Adresse postale</td>
+          <td>Adresse postale</td>
+        </tr>
+        <tr>
+          <td>Téléphone</td>
+          <td>Téléphone</td>
+        </tr>
+        <tr>
+          <td>Email</td>
+          <td>Email</td>
+        </tr>
+
+      </table>
+    </div>
+    <br>
+
+    <div class="bottom"></div>
+      <table class="info-achat" cellspacing="20px">
+        <tr>
+          <th class="titre-achat">Article</th>
+          <th class="titre-achat">Quantité</th>
+          <th class="titre-achat">Prix</th>
+          <th class="titre-achat">Résultat</th>
+          <th class="titre-achat">Somme</th>
+        </tr>
+        <tr>
+          <td>E1</td>
+          <td><input type="text" name="q1" id="q1"></td>
+          <td><input type="text" name="p1" id="p1"></td>
+          <td><input type="text" name="resultat1" id="resultat1"></td>
+          <td><input type="text" name="total" id="total"></td>
+          
+
+        </tr>
+        <tr>
+          <td>E2</td>
+          <td><input type="text" name="q2" id="q2"></td>
+          <td><input type="text" name="p2" id="p2"></td>
+          <td><input type="text" name="resultat2" id="resultat2"></td>
+          
+        </tr>
+        <tr>
+          <td>E3</td>
+          <td><input type="text" name="q3" id="q3"></td>
+          <td><input type="text" name="p3" id="p3"></td>
+          <td><input type="text" name="resultat3" id="resultat3"></td>
+        </tr>
+        <tr>
+          <td>E4</td>
+          <td><input type="text" name="q4" id="q4"></td>
+          <td><input type="text" name="p4" id="p4"></td>
+          <td><input type="text" name="resultat4" id="resultat4"></td>
+        </tr>
+        <tr>
+          <td>E5</td>
+          <td><input type="text" name="q5" id="q5"></td>
+          <td><input type="text" name="p5" id="p5"></td>
+          <td><input type="text" name="resultat5" id="resultat5"></td>
+        </tr>
+      </table>
+      <p>
+      <button onclick="multiplication()">Calculer</button>
+      <button onclick="reset()">Réintialiser</button>
+      </p>
+    </div>
+  </body>
+</html>

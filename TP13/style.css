@@ -1,0 +1,53 @@
+body {
+  font-family: "Lato", sans-serif;
+  padding: 10px;
+}
+
+.middle {
+  border-bottom: 2px solid black;
+}
+
+table {
+  border: 1px solid black;
+}
+
+img {
+  width: 400px;
+  height: 200px;
+  float: left;
+  margin: 10px;
+}
+
+div {
+  clear: both;
+}
+
+.info-client {
+  margin-top: 54px;
+}
+
+.sous-titre {
+  text-decoration: underline;
+  font-weight: bold;
+  margin-left: 56px;
+  width: 300px;
+}
+
+.titre-achat {
+  background-color: black;
+  padding: 10px;
+  color: white;
+  text-align: center;
+  border-radius: 30px;
+}
+td,
+input {
+  background-color: #e8e8e8;
+  text-align: center;
+  border: none;
+  border-radius: 20px;
+}
+
+button {
+  margin-left: 22px;
+}
