@@ -18,12 +18,16 @@ button {
 .petit-bouton {
   width: 90px;
   height: 30px;
+  color: white;
   font-size: 20px;
   background-color: green;
+  border-radius: 30px;
+  transition: 0.5s;
 }
 
 .petit-bouton:hover {
   background-color: orange;
+  transition: 188ms;
 }
 
 button:hover {
@@ -44,4 +48,10 @@ button:hover {
 .no {
   background-color: red;
   color: white;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  padding: 7px;
 }
