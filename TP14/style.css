@@ -1,0 +1,38 @@
+body {
+  background-color: beige;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+button {
+  width: 200px;
+  height: 200px;
+  background-color: whitesmoke;
+  color: black;
+  border: 2px solid gray;
+  border-radius: 22px;
+  font-size: 2em;
+  margin: 25px;
+  transition: 0.5s;
+}
+
+.petit-bouton {
+  width: 90px;
+  height: 30px;
+  font-size: 20px;
+  background-color: green;
+}
+
+.petit-bouton:hover {
+  background-color: orange;
+}
+
+button:hover {
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+  transition: 188ms;
+}
+
+.block2 {
+  background-color: #f8eaae;
+}
