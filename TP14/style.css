@@ -36,3 +36,12 @@ button:hover {
 .block2 {
   background-color: #f8eaae;
 }
+
+.yes {
+  background-color: #61d134;
+}
+
+.no {
+  background-color: red;
+  color: white;
+}

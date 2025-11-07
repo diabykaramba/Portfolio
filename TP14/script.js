@@ -44,7 +44,7 @@ function login() {
   if (login == "admin" && mdp == "admin") {
     window.location.href = "yes.html";
   } else {
-    window.location.href = "non.html";
+    window.location.href = "no.html";
   }
 }
 function reinit() {
