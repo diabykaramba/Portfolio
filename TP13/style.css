@@ -38,14 +38,12 @@ div {
   padding: 10px;
   color: white;
   text-align: center;
-  border-radius: 30px;
 }
 td,
 input {
   background-color: #e8e8e8;
   text-align: center;
   border: none;
-  border-radius: 20px;
 }
 
 button {
