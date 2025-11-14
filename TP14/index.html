@@ -14,6 +14,7 @@
       <button onclick="cdc()">Chaine de caractères</button>
       <button onclick="seconnecter()">Se connecter</button>
       <button onclick="seconnecter2()">Connexion 2</button>
+      <button onclick="seconnecter3()">Connexion 3</button>
       <div class="block2">
         <hr />
         <h2>Connectez-vous</h2>
@@ -22,6 +23,41 @@
         <input type="text" name="t2" id="t2" placeholder="Mot de passe" />
         <br />
         <button class="petit-bouton" onclick="login()">Suivant</button>
+      </div>
+
+      <div class="block3">
+        <br />
+        <h2>Tableau dynamique</h2>
+
+        Nom: <br />
+        <input type="text" placeholder="Nom" name="nom" id="nom" /> <br />
+        Age: <br />
+        <input type="text" placeholder="Age" name="age" id="age" />
+        <br />
+        <br />
+
+        <table id="myTable" cellspacing="20px">
+          <tr>
+            <td>Nom</td>
+            <td>Age</td>
+          </tr>
+          <tr>
+            <td>John</td>
+            <td>30</td>
+          </tr>
+          <tr>
+            <td>Jane</td>
+            <td>25</td>
+          </tr>
+          <hr />
+        </table>
+        <hr />
+
+        <button class="buttonAdd" onclick="addLigne()">
+          Ajoutez une ligne
+        </button>
+        <br />
+        <hr />
       </div>
     </center>
   </body>

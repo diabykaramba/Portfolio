@@ -18,16 +18,12 @@ button {
 .petit-bouton {
   width: 90px;
   height: 30px;
-  color: white;
   font-size: 20px;
   background-color: green;
-  border-radius: 30px;
-  transition: 0.5s;
 }
 
 .petit-bouton:hover {
   background-color: orange;
-  transition: 188ms;
 }
 
 button:hover {
@@ -38,7 +34,7 @@ button:hover {
 }
 
 .block2 {
-  background-color: #f8eaae;
+  background-color: #f5f5b2;
 }
 
 .yes {
@@ -54,4 +50,18 @@ a {
   text-decoration: none;
   color: white;
   padding: 7px;
+}
+
+.block3 {
+  background-color: #dfc57b;
+}
+
+#nom {
+  border: ridge;
+  border-radius: 30px;
+}
+
+#age {
+  border: ridge;
+  border-radius: 30px;
 }
