@@ -152,6 +152,10 @@ nav > ul > li:hover a {
 .menu-certif .submenu {
   background-color: rgb(189, 0, 255);
 }
+
+.menu-certif .submenu-2 {
+  background-color: white;
+}
 .menu-contact .submenu {
   background-color: RGB(171, 171, 158);
 }
