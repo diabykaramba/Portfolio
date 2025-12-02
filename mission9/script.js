@@ -68,7 +68,7 @@ function testqcm() {
   if (points >= 2) {
     document.write("Vous avez " + points + " bonnes réponses !" + "<br>" + "<a href='correction.html'>Voir correction</a>");
   } else if (points == 1) {
-    document.write("Vous avez 1 bonne réponse." + "<br>" + "<a href='correction.html'>Voir correction</a>");
+    document.write("Vous avez 1 bonne réponse." + "<br>" + "<a href='correction.html' target="_blank">Voir correction</a>");
   } else {
     document.write("BOOOOOO!!! Vous n'avez aucune bonne réponse." + "<br>" + "<a href='correction.html'>Voir correction</a>");
   }
