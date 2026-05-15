@@ -1,225 +1,163 @@
 body {
-  font-family: Verdana, "Calibri", sans-serif;
-  margin: 0px;
-  padding: 0px;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(-45deg, #f5f7fa, #424643, #424045, #fdfbf7);
+  background-size: 400% 400%;
+  animation: gradientAnimation 15s ease infinite;
+  min-height: 100vh;
+  color: white;
 }
 
-/* On utilise ">" pour ne cibler que la liste ul qui
-est un enfant direct de nav */
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+nav {
+  background-color: #333;
+  width: 100%;
+}
+
 nav > ul {
-  margin: 0px;
-  padding: 0px;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  justify-content: center; /* Centre le menu */
 }
 
-/*On enlève les puces devant tous les élements li
-appartenant à notre élément nav*/
+nav > ul > li > a {
+  display: block;
+  padding: 20px 25px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
 nav li {
-  list-style-type: none;
-}
-
-/*On affiche seulement les éléments li correspondant à
-nos onglets de menu en ligne (côte à côte)*/
-nav > ul > li {
-  float: left;
+  position: relative;
+  color: black;
 }
 
 .submenu {
   display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  min-width: 200px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  z-index: 100;
 }
 
-/* On rend notre case à cocher invisible */
+/* Affiche le sous-menu au survol */
+nav li:hover .submenu {
+  display: block;
+}
+
+.submenu li a {
+  display: block;
+  padding: 12px 20px;
+  color: #333;
+  text-decoration: none;
+  border-bottom: 1px solid #eee;
+  font-size: 13px;
+}
+
+.submenu li a:hover {
+  background-color: #f0f0f0;
+}
+
+/* --- Couleurs par catégorie (Survol) --- */
+.menu-html:hover {
+  background-color: #e44d26;
+}
+.menu-css:hover {
+  background-color: #0070bb;
+}
+.menu-js:hover {
+  background-color: #f1dc4f;
+}
+.menu-php:hover {
+  background-color: #e02c2c;
+}
+.menu-mission:hover {
+  background-color: #1f8a07;
+}
+.menu-certif:hover {
+  background-color: #c33df2;
+}
+.menu-contact:hover {
+  background-color: #666;
+}
+
+.welcome {
+  text-align: center;
+  font-size: 40px;
+}
+
+.presentation {
+  border: 2px solid rgb(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  padding: 20px;
+  width: 80%;
+}
+
+.presentation p {
+  font-weight: bold;
+}
+
+/* Menu pour mobile/fenêtre réduite */
+.menu-mobile {
+  display: none;
+  color: white;
+  background-color: #1dc597;
+  text-align: center;
+  padding: 15px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
 nav input[type="checkbox"] {
   display: none;
 }
 
-/* On cache le bouton affichant le menu mobile 
-.menu-mobile {
-  display: none;
-} */
-.menu-mobile {
-  display: block;
-  color: #fff;
-  font-size: 50px;
-  font-weight: bold;
-  background-color: rgba(29, 197, 151, 0.97);
-  text-align: center;
-  padding: 12px 0;
-}
-
-nav {
-  width: 100%;
-  background-color: #424558;
-}
-
-/* On affiche seulement les éléments li correspondant
-à nos onglets de menu en ligne (côte à côte) */
-nav > ul > li {
-  float: left;
-  position: relative;
-}
-
-/* Un "hack" CSS (clearflix) très connu :p */
-nav > ul::after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-nav a {
-  display: inline-block;
-  text-decoration: none;
-}
-
-nav > ul > li > a {
-  padding: 20px 30px;
-  color: white;
-}
-
-/* Montrer le sous-menu d'une categorie en mettant
-le pointeur de la souris dessus */
-nav li:hover .submenu {
-  display: inline-block;
-  position: absolute;
-  top: 100%;
-  left: 0px;
-  padding: 0px;
-  z-index: 100000;
-}
-
-.submenu li {
-  border-bottom: 1px solid #ccc;
-}
-
-.submenu li a {
-  padding: 15px 30px;
-  font-size: 13px;
-  color: #222538;
-  width: 270px;
-}
-
-.menu-html:hover {
-  border-top: 5px solid #e44d26;
-  background-color: RGBa(228, 77, 38, 0.15);
-}
-
-.menu-css:hover {
-  border-top: 5px solid #0070bb;
-  background-color: RGBa(000, 112, 192, 0.15);
-}
-
-.menu-js:hover {
-  border-top: 5px solid #f1dc4f;
-  background-color: RGBa(241, 211, 79, 0.15);
-}
-
-.menu-contact:hover {
-  border-top: 5px solid #bbb;
-  background-color: RGBa(220, 220, 220, 0.15);
-}
-
-.menu-mission:hover {
-  border-top: 5px solid #e2f7dd;
-  background-color: rgba(89, 250, 52, 0.15);
-}
-.menu-php:hover {
-  border-top: 5px solid #e02c2c;
-  background-color: rgb(255, 0, 0, 0.15);
-}
-.menu-certif:hover {
-  border-top: 5px solid #c33df2;
-  background-color: rgba(208, 103, 245, 0.15);
-}
-
-nav > ul > li:hover a {
-  padding: 15px 30px 20px 30px;
-}
-
-.menu-html .submenu {
-  background-color: RGB(230, 100, 40);
-}
-.menu-css .submenu {
-  background-color: RGB(000, 160, 240);
-}
-.menu-js .submenu {
-  background-color: RGB(251, 216, 99);
-}
-.menu-php .submenu {
-  background-color: rgb(255, 0, 0);
-}
-.menu-mission .submenu {
-  background-color: RGB(31, 138, 7);
-}
-.menu-certif .submenu {
-  background-color: rgb(189, 0, 255);
-}
-
-.menu-certif .submenu-2 {
-  background-color: white;
-}
-.menu-contact .submenu {
-  background-color: RGB(171, 171, 158);
-}
-
-submenu li:hover a {
-  color: #eee;
-  font-weight: bold;
-}
-.menu-html .submenu li:hover {
-  background-color: RGB(210, 77, 60);
-}
-.menu-css .submenu li:hover {
-  background-color: RGB(000, 115, 200);
-}
-.menu-js .submenu li:hover {
-  background-color: RGB(200, 165, 75);
-}
-.menu-php .submenu li:hover {
-  background-color: rgb(230, 110, 110);
-}
-
-.menu-mission .submenu li:hover {
-  background-color: rgb(206, 240, 198);
-}
-.menu-certif .submenu li:hover {
-  background-color: RGB(200, 165, 75);
-}
-
-.menu-contact .submenu li:hover {
-  background-color: RGB(200, 165, 75);
-}
-
-/*Lorsque la case est cochée (dès qu'un utilisateur appuie sur
-*notre bouton), le menu entier s'affiche*/
-nav input[type="checkbox"]:checked ~ ul {
-  display: block;
-}
-
-/*On modifie le style de notre menu pour son affichage responsive*/
-
-@media screen and (max-width: 680px) {
+@media screen and (max-width: 768px) {
   .menu-mobile {
     display: block;
-    color: #fff;
-    background-color: rgba(29, 197, 151, 0.97);
-    text-align: center;
-    padding: 12px 0;
   }
-  nav ul {
+
+  nav > ul {
     display: none;
+    flex-direction: column;
   }
-  nav ul li,
-  nav ul li a {
-    width: 100%;
+
+  nav input[type="checkbox"]:checked ~ ul {
+    display: flex;
+  }
+
+  nav > ul > li > a {
     text-align: center;
+    border-bottom: 1px solid #444;
   }
 
-  nav ul li a,
-  nav ul li:hover a {
-    padding: 10px 0px 10px 0px;
-  }
-
-  nav li:hover .submenu {
-    display: block;
+  .submenu {
     position: static;
+    width: 100%;
+    box-shadow: none;
   }
 }
