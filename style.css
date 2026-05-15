@@ -1,8 +1,8 @@
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Lato", Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background: linear-gradient(-45deg, #f5f7fa, #424643, #424045, #fdfbf7);
+  background: linear-gradient(-145deg, #f5f7fa, #424643, #424045, #bbb5ba);
   background-size: 400% 400%;
   animation: gradientAnimation 15s ease infinite;
   min-height: 100vh;
@@ -31,7 +31,7 @@ nav > ul {
   margin: 0;
   padding: 0;
   list-style: none;
-  justify-content: center; /* Centre le menu */
+  justify-content: center;
 }
 
 nav > ul > li > a {
@@ -81,7 +81,6 @@ nav li:hover .submenu {
   background-color: #f0f0f0;
 }
 
-/* --- Couleurs par catégorie (Survol) --- */
 .menu-html:hover {
   background-color: #e44d26;
 }
@@ -109,27 +108,51 @@ nav li:hover .submenu {
   font-size: 40px;
 }
 
+hr {
+  border: 3px, solid, #363434;
+  margin: 30px;
+}
+
 .presentation {
   border: 2px solid rgb(0, 0, 0, 0.1);
   background-color: rgba(0, 0, 0, 0.2);
   border-radius: 20px;
   padding: 20px;
   width: 80%;
+  margin-bottom: 25px;
 }
 
-.presentation p {
+.languages {
+  border: 2px solid rgb(0, 0, 0, 0.1);
+  background-color: rgba(64, 61, 61, 0.2);
+  border-radius: 20px;
+  padding: 20px;
+  width: 90%;
+  margin-bottom: 25px;
+}
+
+.languages ul li {
+  font-size: 20px;
   font-weight: bold;
+  margin: 30px;
+  display: inline-block;
 }
 
-/* Menu pour mobile/fenêtre réduite */
+/* Menu mobile/affichage fractionné */
 .menu-mobile {
   display: none;
   color: white;
-  background-color: #1dc597;
-  text-align: center;
+  background-color: rgba(0, 0, 0, 0.2);
   padding: 15px;
   font-weight: bold;
   cursor: pointer;
+  font-size: 20px;
+  transition: 0.2s;
+}
+
+.menu-mobile:hover {
+  background-color: rgb(91, 88, 88);
+  transition: 0.2s;
 }
 
 nav input[type="checkbox"] {
@@ -141,6 +164,21 @@ nav input[type="checkbox"] {
     display: block;
   }
 
+  @keyframes glissage {
+    from {
+      transform: translateY(-10px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 100;
+    }
+  }
+
+  .bars {
+    color: white;
+    width: 30px;
+  }
   nav > ul {
     display: none;
     flex-direction: column;
@@ -148,6 +186,7 @@ nav input[type="checkbox"] {
 
   nav input[type="checkbox"]:checked ~ ul {
     display: flex;
+    animation: glissage ease 0.2s;
   }
 
   nav > ul > li > a {
