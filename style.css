@@ -77,6 +77,16 @@ nav li:hover .submenu {
   font-size: 13px;
 }
 
+.submenu-label {
+  display: block;
+  padding: 12px;
+  background-color: #aeacac;
+  color: #333;
+  text-decoration: none;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
 .submenu li a:hover {
   background-color: #f0f0f0;
 }
@@ -138,7 +148,7 @@ hr {
   display: inline-block;
 }
 
-/* Menu mobile/affichage fractionné */
+/* Menu mobile/écran fractionné */
 .menu-mobile {
   display: none;
   color: white;
