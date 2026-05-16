@@ -1,0 +1,48 @@
+<html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="connexion.css">
+    <meta charset="UTF-8">
+    <title>S'enregistrer</title>
+</head>
+<body>  
+    <form action="inscription.php" method="POST">
+        <center>
+        <div>
+        <h1>S’Enregistrer</h1>
+        <!-- Role -->
+        <label>Role</label>
+        <br>
+        <select name="fonction">
+            <option>Directeur</option>
+            <option>Employe</option>
+        </select>
+        <br><br>
+        <!-- Saisie du nom et prénom -->
+        <input type="text" name="nom" placeholder="Nom" required>
+        <input type="text" name="prenom" placeholder="Prénom" required>
+        <br><br>
+        <label>Date de naissance</label>
+        <br>
+        <input type="date" name="date_de_naissance" required>
+        <br><br>
+        <!-- Sexe -->
+        <label>Sexe</label>
+        <br>
+        <select name="sexe">
+            <option>M</option>
+            <option>F</option>
+        </select>
+        <br><br>
+        <!-- Saisie du login et mot de passe -->
+        <input type="text" name="login" placeholder="Identifiant" required>
+        <input type="password" name="password" placeholder="Mot de passe" required>
+        <br><br>
+        <input type="submit" value="S'enregistrer"><br>
+        <input type="reset" value="Annuler">
+        <br><br>
+        <a href="index.php">Retour</a>
+        </div>
+        </center>
+</body>
+</html>

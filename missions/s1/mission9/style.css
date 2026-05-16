@@ -1,0 +1,33 @@
+body {
+  font-family: "Lato", sans-serif;
+  padding: 8px;
+}
+
+h1 {
+  font-size: 48px;
+  text-align: center;
+}
+
+.notice {
+  color: green;
+}
+
+.vilgenis {
+  color: darkred;
+}
+
+input[type="checkbox"] {
+  margin-bottom: 10px;
+}
+
+.bonne-reponse {
+  color: green;
+  font-weight: bolder;
+  font-size: 22px;
+}
+
+.bonne-reponsedeux {
+  color: blue;
+  font-weight: bolder;
+  font-size: 22px;
+}

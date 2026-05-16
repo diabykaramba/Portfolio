@@ -1,0 +1,234 @@
+/* Importation de la police "Poppins" */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  /* Dégradé animé en fond */
+  background: linear-gradient(-45deg, #ee7752, #e59129, #a0ce43, #866718);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+@keyframes gradientBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Conteneur principal qui simule une fenêtre d'application */
+body > div.menu,
+.tabcontent {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+}
+
+/* --- Barre de navigation flottante --- */
+.menu {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  bottom: 20px;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  padding: 30px 15px;
+  z-index: 10;
+}
+
+.auth {
+  background: rgba(8, 112, 22, 0.308);
+  border-radius: 12px;
+  padding: 10px;
+  color: white;
+  transition: 0.3s all;
+}
+
+.menu button {
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  margin: 10px 0;
+  padding: 12px;
+  color: white;
+  border-radius: 12px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s all;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 0.8rem;
+}
+
+.menu button:hover {
+  background: white;
+  color: #e73c7e;
+  transform: translateX(10px);
+}
+
+.logout {
+  background: rgba(208, 41, 22, 0.325) !important;
+  margin-top: 0.5em !important;
+}
+
+/* --- Zone de contenu --- */
+.tabcontent {
+  position: absolute;
+  margin-left: 19px;
+  left: 250px;
+  right: 40px;
+  top: 40px;
+  bottom: 40px;
+  padding: 40px;
+  color: white;
+  overflow-y: auto;
+}
+
+h1 {
+  color: rgba(244, 243, 243, 0.378) !important;
+  font-size: 3rem;
+  margin-top: -6px;
+  margin-bottom: -10px;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 2.5rem;
+  margin-top: 0;
+  background: linear-gradient(to right, #fff, #ddd);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+/* Scrollbar personnalisée pour l'effet verre */
+.tabcontent::-webkit-scrollbar {
+  width: 6px;
+}
+.tabcontent::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+}
+
+/* Boutons d'action internes */
+.bouton,
+input[type="submit"],
+input[type="reset"] {
+  color: white;
+  padding: 10px 25px;
+  border-radius: 50px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+  background-color: rgba(116, 109, 109, 0.279);
+  border: 1px, solid, rgba(116, 109, 109, 0.74);
+  margin: 5px;
+}
+
+.bouton:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+table {
+  border: 1px solid rgba(116, 109, 109, 0.74);
+  border-radius: 12px;
+  border-collapse: collapse;
+  background-color: rgba(116, 109, 109, 0.279);
+  text-align: center;
+  width: 100%;
+}
+
+.table_container {
+  max-height: 200px;
+  max-width: 100%;
+  overflow-x: auto;
+  overflow-y: auto;
+}
+
+.table_container2 {
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+tr > td {
+  padding: 10px;
+  border: 0.1px, solid, rgba(116, 109, 109, 0.74);
+}
+
+#dashboard {
+  background: no-repeat 10% 100% / 270em 160em url(images/giraffe.jpg);
+}
+
+#ajouter {
+  background: no-repeat 100% 15% / 170em 120em url(images/adult-lion.jpg);
+}
+
+#modifier {
+  background: no-repeat 100% 90% / 180em 100em url(images/polar-bear.jpg);
+}
+
+#rechercher {
+  background: no-repeat 25% 0% / 180em 120em url(images/toucan.jpg);
+}
+
+#supprimer {
+  background: no-repeat 0% 0% / 100em 50em url(images/aquarium.jpg);
+}
+
+.especes {
+  width: 20%;
+  padding: 10px;
+  border: 1px, solid, rgba(116, 109, 109, 0.74);
+  border-radius: 10px;
+  background-color: rgba(116, 109, 109, 0.279);
+}
+
+.sexe {
+  text-transform: uppercase;
+}
+
+input[type="text"],
+select,
+option,
+input[type="date"],
+input[type="number"] {
+  margin: 6px;
+  color: white;
+  background-color: rgba(185, 179, 179, 0.503);
+  border: 1px, solid, rgba(116, 109, 109, 0.74);
+  border-radius: 10px;
+  height: 1.5rem;
+  padding: 3px;
+}
+
+option {
+  color: black;
+  background-color: rgba(106, 98, 98, 0.801);
+}
+
+input[type="text"][readonly] {
+  color: rgb(80, 79, 79);
+  background-color: rgba(68, 66, 66, 0.503);
+}

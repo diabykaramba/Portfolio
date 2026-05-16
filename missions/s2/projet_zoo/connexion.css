@@ -1,0 +1,128 @@
+body {
+  font-family: "Lato", sans-serif;
+  background-color: #e1b544;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  color: #333;
+  background-image: url("images/background.webp");
+  background-size: cover;
+}
+
+/* Conteneur principal (Remplace l'usage des balises <center>) */
+form {
+  background: linear-gradient(-45deg, #ee7752, #e59129, #a0ce43, #866718);
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  animation: gradientBG 15s ease infinite;
+  background-size: 400% 400%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  overflow: hidden;
+}
+
+@keyframes gradientBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+h1 {
+  color: #2c3e50;
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+}
+
+h3 {
+  font-size: 1rem;
+  margin-top: 2rem;
+  color: #7f8c8d;
+}
+
+/* Champs de saisie et Selects */
+input[type="text"],
+input[type="password"],
+input[type="date"],
+select {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-sizing: border-box; /* Pour que le padding ne dépasse pas la largeur */
+  font-size: 1rem;
+}
+
+input:focus,
+select:focus {
+  border-color: #3498db;
+  outline: none;
+  box-shadow: 0 0 5px rgba(52, 152, 219, 0.3);
+}
+
+/* Boutons */
+input[type="submit"],
+input[type="reset"],
+.style {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s ease;
+  font-size: 1rem;
+}
+
+input[type="submit"] {
+  background-color: #3498db;
+  color: white;
+}
+
+input[type="submit"]:hover {
+  background-color: #2980b9;
+}
+
+input[type="reset"] {
+  background-color: #e74c3c;
+  color: white;
+}
+
+input[type="reset"]:hover {
+  background-color: #c0392b;
+}
+
+/* Liens */
+a {
+  color: #3498db;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Labels */
+label {
+  display: block;
+  text-align: left;
+  font-weight: bold;
+  margin-top: 10px;
+  color: #555;
+  font-size: 0.9rem;
+}
