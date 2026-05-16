@@ -141,6 +141,10 @@ hr {
   margin-bottom: 25px;
 }
 
+.languages ul {
+  padding-inline-start: 0px;
+}
+
 .languages ul li {
   font-size: 20px;
   font-weight: bold;
