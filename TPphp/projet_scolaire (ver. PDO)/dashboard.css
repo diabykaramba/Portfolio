@@ -1,0 +1,120 @@
+/* Configuration générale */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f7f6;
+  margin: 0;
+  display: flex;
+  height: 100vh;
+}
+
+/* Style du menu latéral */
+.menu {
+  width: 250px;
+  background-color: #2c3e50;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.menu button {
+  background: none;
+  border: none;
+  color: #ecf0f1;
+  padding: 15px 20px;
+  text-align: left;
+  font-size: 16px;
+  cursor: pointer;
+  transition:
+    background 0.3s,
+    padding-left 0.3s;
+}
+
+.menu button:hover {
+  background-color: #34495e;
+  padding-left: 30px;
+  color: #3498db;
+}
+
+/* Contenu des onglets */
+.tabcontent {
+  flex-grow: 1;
+  padding: 40px;
+  display: none; /* Caché par défaut via JS */
+  animation: fadeIn 0.4s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+h2 {
+  color: #2c3e50;
+  border-bottom: 2px solid #3498db;
+  padding-bottom: 10px;
+  margin-bottom: 30px;
+}
+
+/* Style des boutons d'action */
+.action-btn {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition:
+    transform 0.2s,
+    background 0.2s;
+}
+
+.action-btn:hover {
+  background-color: #2980b9;
+  transform: scale(1.05);
+}
+
+/* Style spécifique pour supprimer (facultatif si tu veux varier) */
+.supprimer {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition:
+    transform 0.2s,
+    background 0.2s;
+}
+
+.supprimer:hover {
+  background-color: #96291d;
+  transform: scale(1.05);
+}
+
+/* Section statistiques */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background: white;
+  margin: 10px 0;
+  padding: 15px;
+  border-left: 5px solid #3498db;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}

@@ -1,0 +1,36 @@
+<html>
+  <html lang="en">
+    <head>
+      <link rel="stylesheet" type="text/css" href="ajout_eleve.css" />
+      <meta charset="UTF-8" />
+
+      <title>Ajouter</title>
+    </head>
+    <body>
+      <form
+        action="ajout_eleve.php"
+        method="post"
+        enctype="multipart/form-data"
+      >
+      <center>
+        <div>
+          <h1>Ajouter un élève</h1>
+          <label>Numéro de l'élève</label>
+          <input type="text" name="num_eleve" class="style1" required/><br />
+          <label>Nom de l'élève</label>
+          <input type="text" name="nom_eleve" class="style1" required/><br />
+          <label>Adresse</label>
+          <input type="text" name="adresse" class="style1" required/><br />
+          <label>Numéro de téléphone</label>
+          <input type="text" name="num_telephone" class="style1" required/><br />
+          <label for="photo">Photo</label>
+          <input type="file" id="file" name="file" class="style1" /><br />
+
+          <input type="submit" value="Ajouter" class="style2" /><br />
+          <input type="reset" value="Annuler" class="style2" /><br />
+          <a href="menu.php">Retour</a>
+        </div>
+      </center>
+    </body>
+  </html>
+</html>

@@ -1,0 +1,90 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f7f6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Conteneur principal (le formulaire) */
+form {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  width: 350px;
+}
+
+/* Titre */
+h1 {
+  color: #333;
+  margin-bottom: 25px;
+  font-size: 24px;
+}
+
+/* Style des champs de saisie (classe style1) */
+.style1 {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0 20px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box; /* Pour que le padding ne dépasse pas */
+}
+
+/* Style du menu déroulant (select) */
+select {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0 25px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: white;
+}
+
+/* Style des boutons (classe style2) */
+.style2 {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+/* Bouton S'enregistrer (vert) */
+input[value="S'enregistrer"] {
+  background-color: #2ecc71;
+  color: white;
+}
+
+input[value="S'enregistrer"]:hover {
+  background-color: #27ae60;
+}
+
+/* Bouton Annuler (gris/rouge) */
+input[value="Annuler"] {
+  background-color: #e74c3c;
+  color: white;
+}
+
+input[value="Annuler"]:hover {
+  background-color: #c0392b;
+}
+
+/* Lien de retour */
+a {
+  display: inline-block;
+  margin-top: 15px;
+  text-decoration: none;
+  color: #3498db;
+  font-size: 14px;
+}
+
+a:hover {
+  text-decoration: underline;
+}

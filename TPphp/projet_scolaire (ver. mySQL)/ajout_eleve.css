@@ -1,0 +1,109 @@
+/* Configuration globale */
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background-color: #f0f2f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Conteneur principal (div à l'intérieur du form) */
+form div {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  width: 350px;
+  text-align: left; /* Aligne le texte à gauche pour plus de clarté */
+}
+
+/* Titre principal */
+h1 {
+  color: #2c3e50;
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Libellés (labels) */
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #34495e;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+/* Champs de saisie (class="style1") */
+.style1 {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #dcdde1;
+  border-radius: 6px;
+  box-sizing: border-box; /* Évite que le champ ne dépasse */
+  font-size: 15px;
+  transition: border-color 0.3s;
+}
+
+.style1:focus {
+  outline: none;
+  border-color: #3498db;
+  box-shadow: 0 0 5px rgba(52, 152, 219, 0.3);
+}
+
+/* Boutons d'action (class="style2") */
+.style2 {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition:
+    background 0.3s,
+    transform 0.1s;
+}
+
+/* Style spécifique pour "Ajouter" */
+input[type="submit"].style2 {
+  background-color: #27ae60;
+  color: white;
+}
+
+input[type="submit"].style2:hover {
+  background-color: #219150;
+}
+
+/* Style spécifique pour "Annuler" */
+input[type="reset"].style2 {
+  background-color: #e74c3c;
+  color: white;
+}
+
+input[type="reset"].style2:hover {
+  background-color: #c0392b;
+}
+
+.style2:active {
+  transform: scale(0.98);
+}
+
+/* Lien de retour */
+a {
+  display: block;
+  text-align: center;
+  margin-top: 15px;
+  color: #7f8c8d;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+a:hover {
+  color: #34495e;
+  text-decoration: underline;
+}

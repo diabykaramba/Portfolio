@@ -83,7 +83,7 @@ nav li:hover .submenu {
   background-color: #aeacac;
   color: #333;
   text-decoration: none;
-  font-size: 14px;
+  font-size: 13.3px;
   text-transform: uppercase;
 }
 
@@ -103,6 +103,9 @@ nav li:hover .submenu {
 .menu-sql:hover {
   background-color: #e02c2c;
 }
+.menu-php:hover {
+  background-color: #5537ae;
+}
 .menu-mission:hover {
   background-color: #1f8a07;
 }
@@ -114,7 +117,6 @@ nav li:hover .submenu {
 }
 
 .welcome {
-  text-align: center;
   font-size: 40px;
 }
 
