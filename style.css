@@ -120,6 +120,11 @@ nav li:hover .submenu {
   font-size: 40px;
 }
 
+.hidden-link {
+  text-decoration: none;
+  color: white;
+}
+
 hr {
   border: 3px, solid, #1111110b;
   margin: 30px;
@@ -154,16 +159,18 @@ hr {
   display: inline-block;
 }
 
-/* Menu mobile/écran fractionné */
+/* Menu mobile/affichage fractionné */
 .menu-mobile {
   display: none;
   color: white;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: #333;
   padding: 15px;
   font-weight: bold;
   cursor: pointer;
   font-size: 20px;
   transition: 0.2s;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 
 .menu-mobile:hover {
@@ -178,9 +185,10 @@ nav input[type="checkbox"] {
 @media screen and (max-width: 768px) {
   .menu-mobile {
     display: block;
+    float: left;
   }
 
-  @keyframes glissage {
+  @keyframes glissade {
     from {
       transform: translateY(-10px);
       opacity: 0;
@@ -191,6 +199,10 @@ nav input[type="checkbox"] {
     }
   }
 
+  .welcome {
+    clear: both;
+  }
+
   .bars {
     color: white;
     width: 30px;
@@ -198,11 +210,12 @@ nav input[type="checkbox"] {
   nav > ul {
     display: none;
     flex-direction: column;
+    clear: both;
   }
 
   nav input[type="checkbox"]:checked ~ ul {
     display: flex;
-    animation: glissage ease 0.2s;
+    animation: glissade ease 0.2s;
   }
 
   nav > ul > li > a {
