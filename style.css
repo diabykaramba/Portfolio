@@ -139,20 +139,28 @@ hr {
   margin-bottom: 25px;
 }
 
-.languages {
+.about {
   border: 2px solid rgb(0, 0, 0, 0.1);
   background-color: rgba(64, 61, 61, 0.2);
   border-radius: 20px;
   padding: 20px;
   width: 90%;
   margin-bottom: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
-.languages ul {
+.about ul {
   padding-inline-start: 0px;
 }
 
-.languages ul li {
+.about img {
+  width: 8rem;
+}
+
+.about ul li {
   font-size: 20px;
   font-weight: bold;
   margin: 30px;
@@ -169,7 +177,6 @@ hr {
   cursor: pointer;
   font-size: 20px;
   transition: 0.2s;
-  border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
 }
 
@@ -178,11 +185,15 @@ hr {
   transition: 0.2s;
 }
 
+.menu-mobile:active {
+  opacity: 50%;
+}
+
 nav input[type="checkbox"] {
   display: none;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1000px) {
   .menu-mobile {
     display: block;
     float: left;
