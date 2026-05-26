@@ -193,6 +193,12 @@ nav input[type="checkbox"] {
   display: none;
 }
 
+footer {
+  background-color: rgba(118, 116, 116, 0.118);
+  font-size: 20px;
+  padding: 10px;
+}
+
 @media screen and (max-width: 1000px) {
   .menu-mobile {
     display: block;
