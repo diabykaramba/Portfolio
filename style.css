@@ -195,9 +195,12 @@ nav input[type="checkbox"] {
 
 footer {
   background-color: rgba(30, 29, 29, 0.042);
-  font-size: 18px;
+  border: 1px solid rgba(29, 28, 28, 0.042);
+  font-size: 15px;
   padding: 10px;
-  border-radius: 20px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  float: right;
 }
 
 @media screen and (max-width: 1000px) {
