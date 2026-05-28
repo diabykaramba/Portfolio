@@ -156,6 +156,14 @@ hr {
   padding-inline-start: 0px;
 }
 
+img,
+.about ul {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
 .about img {
   width: 8rem;
 }
