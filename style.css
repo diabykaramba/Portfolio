@@ -143,6 +143,20 @@ nav li:hover .submenu2 {
   background-color: #666;
 }
 
+.small-contact-icon-phone {
+  position: absolute;
+  top: 0%;
+  right: 0;
+  width: 40px;
+}
+
+.small-contact-icon-mail {
+  position: absolute;
+  top: 10%;
+  right: 5;
+  width: 30px;
+}
+
 .welcome {
   font-size: 40px;
 }
