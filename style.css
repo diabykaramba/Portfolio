@@ -148,6 +148,7 @@ nav li:hover .submenu2 {
   top: 0%;
   right: 0;
   width: 40px;
+  margin-right: 10px;
 }
 
 .small-contact-icon-mail {
@@ -155,6 +156,7 @@ nav li:hover .submenu2 {
   top: 10%;
   right: 5;
   width: 30px;
+  margin-right: 10px;
 }
 
 .welcome {
